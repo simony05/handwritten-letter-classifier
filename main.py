@@ -11,8 +11,8 @@ from keras.preprocessing.image import img_to_array
 from emnist import extract_training_samples, extract_test_samples
 train_images, train_labels = extract_training_samples('balanced')
 test_images, test_labels = extract_test_samples('balanced')
-print("Training images shape: " + train_images.shape)
-print("Testing images shape: " + test_images.shape)
+print(train_images.shape)
+print(test_images.shape)
 
 # Preprocessing
 train_images, test_images = train_images / 255.0, test_images / 255.0 # Normalize values to be between 0 and 1
